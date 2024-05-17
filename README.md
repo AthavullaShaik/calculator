@@ -4,6 +4,8 @@ Project Overview:
 
 This project is a simple calculator built using HTML, CSS, and JavaScript. The calculator supports basic arithmetic operations: addition, subtraction, multiplication, and division. The goal of this project is to demonstrate the creation of a functional web application using fundamental web development technologies.
 
+![calculator](https://github.com/AthavullaShaik/calculator/assets/139375503/18ce9db0-b597-4248-9209-84f896ba5ef1)
+
 Features:
 
 Basic arithmetic operations: addition, subtraction, multiplication, and division.
@@ -12,6 +14,7 @@ Clear button to reset the calculation.
 Backspace button to remove the last entered digit or operator.
 
 File Structure:
+
 
 calculator/
 
