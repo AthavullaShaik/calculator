@@ -65,15 +65,15 @@ A div with class display for showing the input and result.
 
 Buttons for digits (0-9), operators (+, -, *, /), and control functions (clear, backspace).
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+      </head>
+      <body>
     <div class="calculator">
         <div class="evaluate">
             <input type="text" placeholder="" id="inputbox1" readonly>
@@ -115,39 +115,40 @@ Buttons for digits (0-9), operators (+, -, *, /), and control functions (clear, 
         </div>
     </div>
     <script src="script.js"></script>
-</body>
-</html>
+      </body>
+      </html>
+
 
 CSS (style.css)
 
 The CSS styles ensure the calculator is visually appealing and user-friendly:
 
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-</style>
-.{
+      <style>
+       @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+      </style>
+      .{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'poppins', sans-serif;
-}
-body{
+      }
+      body{
     background: linear-gradient(45deg,#0a0a0a ,#3a4452);
     width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-}
+      }
 
-.calculator{
+      .calculator{
     border: 1px solid #717377;
     padding: 20px;
     border-radius: 16px;
     box-shadow: 0px 3px 15px #717377;
 
-}
-#inputbox{
+      }
+      #inputbox{
     color:white;
     width: 275px;
     border: none;
@@ -156,11 +157,11 @@ body{
     padding: 20px;
     font-size: 30px;
     cursor: pointer;
-}
-input::placeholder{
+      }
+      input::placeholder{
     color: #ffff;
-}
-button{
+      }
+      button{
     border: none;
     border-radius: 50%;
     background: transparent;
@@ -172,14 +173,14 @@ button{
     cursor: pointer;
     box-shadow: -8px -8px 15px rgb(225,225,225,0.1);
 
-}
-.equalBtn{
+      }
+      .equalBtn{
     background-color: #fb7c14;
-}
-.operator{
+      }
+      .operator{
     color: #fb7c14;
-}
-#inputbox1{
+      }
+      #inputbox1{
     color:rgb(193, 189, 189);
     width: 290px;
     border: none;
@@ -188,20 +189,20 @@ button{
     padding: 5px;
     font-size: 15px;
     cursor: pointer;
-}
+      }
 
 JavaScript (script.js)
 
 The JavaScript handles the calculator logic:
 
-let input = document.getElementById('inputbox');
-let input1 = document.getElementById('inputbox1');
-let buttons = document.querySelectorAll('button');
-let string = "";
-let string1 = "";
-let l_operator = '';
-let arr = Array.from(buttons);
-arr.forEach(button => {
+      let input = document.getElementById('inputbox');
+      let input1 = document.getElementById('inputbox1');
+      let buttons = document.querySelectorAll('button');
+      let string = "";
+      let string1 = "";
+      let l_operator = '';
+      let arr = Array.from(buttons);
+      arr.forEach(button => {
     button.addEventListener('click', (e) => {
         if (e.target.innerHTML == '=') {
             string = eval(string1);
@@ -247,10 +248,10 @@ arr.forEach(button => {
                 input.value = string;
                 // input1.value = string1;
                 
-            } 
-        }
-    })
-})
+                  } 
+              }
+          })
+      })
 
 Future Improvements
 
