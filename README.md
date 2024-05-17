@@ -14,10 +14,15 @@ Backspace button to remove the last entered digit or operator.
 File Structure:
 
 calculator/
+
 │
+
 ├── index.html
+
 ├── style.css
+
 ├── script.js
+
 └── README.md
 
 index.html
