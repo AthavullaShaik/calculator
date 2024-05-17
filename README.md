@@ -24,4 +24,4 @@ This file contains the JavaScript code that provides the calculator's functional
 
 How to Run the Project
 Clone the repository:
-git clone https://github.com/yourusername/calculator.git
+git clone [https://github.com/yourusername/calculator.git](https://athavullashaik.github.io/calculator/)
